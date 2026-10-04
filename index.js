@@ -3,11 +3,15 @@ const path = require('path');
 const fs = require('fs');
 const { marked } = require('marked');
 
-const app = express();
+const app = express(); // instance an object of the express module
 const port = 3000;
 
+
+
+// THIS IS MY CODE NOW
+
 // Set the directory paths for HTML and Markdown files
-const htmlDir = path.join(__dirname, '/pages/');
+const htmlDir = path.join(__dirname, '/pages/'); // file locations
 const markdownDir = path.join(__dirname, 'collections/docs/');
 let mdFiles = fs.readdirSync(markdownDir);
 // Middleware to serve HTML files from 'html' directory
